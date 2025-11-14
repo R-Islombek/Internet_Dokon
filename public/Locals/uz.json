@@ -103,5 +103,25 @@
     "title1": "Hozir obuna bo‘ling",
     "text1": "Eng so‘nggi yangiliklar, yangilanishlar va takliflar to‘g‘ridan-to‘g‘ri pochtangizga yuboriladi.",
     "button": "Ro'yxatdan o'ting"
+  },
+  "footer": {
+    "title": "Tezkor Havolalar",
+    "title1": "Yordam va Ma'lumot",
+    "title2": "Biz bilan bog'laning",
+    "link": "Bosh sahifa",
+    "link1": "Biz haqimizda",
+    "link2": "Do‘kon",
+    "link3": "Bloglar",
+    "link4": "Kontakt",
+    "link5": "Buyurtmani kuzatish",
+    "link6": "Qaytarish siyosati",
+    "link7": "Yetkazib berish",
+    "link8": "Biz bilan bog'laning",
+    "link9": "Savol-javob",
+    "link10": "sizninginfo@gmail.com",
+    "link11": "+55 111 222 333 44",
+    "text": "Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.",
+    "text1": "Sizda savol yoki takliflar bormi?",
+    "text2": "Qo‘llab-quvvatlash kerakmi? Bizga qo‘ng‘iroq qiling."
   }
 }

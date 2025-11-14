@@ -103,7 +103,25 @@
         "title1": "Subscribe Us Now",
         "text1": "Get latest news, updates and deals directly mailed to your inbox.",
         "button": "Sign Up"
-
+    },
+    "footer":{
+        "title" : "Quick Links",
+        "title1": "Help & Info Help",
+        "title2": "Contact Us",
+        "link": "Home",
+        "link1": "About",
+        "link2": "Shop",
+        "link3": "Blogs",
+        "link4": "Contact",
+        "link5": "Track Your Order",
+        "link6": "Returns Policies",
+        "link7": "Shipping + Delivery",
+        "link8": "Contact Us",
+        "link9": "Faqs",
+        "link10": "yourinfo@gmail.com",
+        "link11": "+55 111 222 333 44",
+        "text": "Nisi, purus vitae, ultrices nunc. Sit ac sit suscipit hendrerit. Gravida massa volutpat aenean odio erat nullam fringilla.",
+        "text1": "Do you have any queries or suggestions?",
+        "text2": "If you need support? Just give us a call."
     }
-
 }
