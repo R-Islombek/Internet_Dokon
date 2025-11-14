@@ -10,7 +10,7 @@
 .shop-card {
   position: relative;
   width: 100%;
-  height: 260px;
+  aspect-ratio: 4/3; /* width:height proporsiyasi */
   overflow: hidden;
   border-radius: 20px;
   cursor: pointer;
@@ -66,6 +66,15 @@
   transform: translate(-50%, -50%) scale(1);
 }
 
+/* Hover pulsation effect */
+.hover-icon i {
+  transition: transform 0.3s ease;
+}
+
+.shop-card:hover .hover-icon i {
+  transform: scale(1.2) rotate(-10deg);
+}
+
 /* ==================== RESPONSIVE ==================== */
 
 /* Large Tablets */
@@ -73,9 +82,6 @@
   .shops-container {
     gap: 20px;
     padding: 30px 20px;
-  }
-  .shop-card {
-    height: 240px;
   }
   .hover-icon {
     font-size: 40px;
@@ -87,9 +93,6 @@
   .shops-container {
     gap: 18px;
     padding: 25px 15px;
-  }
-  .shop-card {
-    height: 220px;
   }
   .hover-icon {
     font-size: 36px;
@@ -104,19 +107,12 @@
     padding: 15px 10px;
   }
   .shop-card {
-    height: 200px;
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
     border-radius: 16px;
   }
   .hover-icon {
     font-size: 32px;
   }
-}
-
-
-.hover-icon i {
-  transition: transform 0.3s ease;
-}
-
-.shop-card:hover .hover-icon i {
-  transform: rotate(-15deg) scale(1.1);
 }
