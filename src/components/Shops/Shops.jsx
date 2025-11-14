@@ -16,9 +16,7 @@ const Shops = () => {
             {data.map((img, i) => (
                 <div className="shop-card" key={i}>
                     <img src={img} alt="product" className="shop-img" />
-
                     <div className="overlay"></div>
-
                     <div className="hover-icon">
                         <i className="fa-brands fa-instagram"></i>
                     </div>

@@ -1,9 +1,9 @@
-
+/* ==================== MAIN ==================== */
 .shops-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
-  padding: 20px 40px;
+  padding: 40px 20px;
   margin-top: 50px;
 }
 
@@ -12,28 +12,28 @@
   width: 100%;
   height: 260px;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 20px;
   cursor: pointer;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-  transition: transform .3s ease;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .shop-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
 }
 
 .shop-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: .4s ease;
+  transition: transform 0.5s ease, filter 0.5s ease;
 }
 
 .shop-card:hover .shop-img {
-  transform: scale(1.15);
-  filter: brightness(55%);
+  transform: scale(1.2);
+  filter: brightness(60%);
 }
-
 
 .overlay {
   position: absolute;
@@ -42,13 +42,13 @@
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0);
-  transition: .3s ease;
+  transition: background 0.4s ease;
+  border-radius: 20px;
 }
 
 .shop-card:hover .overlay {
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.35);
 }
-
 
 .hover-icon {
   position: absolute;
@@ -58,10 +58,65 @@
   font-size: 45px;
   color: #fff;
   opacity: 0;
-  transition: .35s ease;
+  transition: transform 0.35s ease, opacity 0.35s ease;
 }
 
 .shop-card:hover .hover-icon {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+/* Large Tablets */
+@media (max-width: 1200px) {
+  .shops-container {
+    gap: 20px;
+    padding: 30px 20px;
+  }
+  .shop-card {
+    height: 240px;
+  }
+  .hover-icon {
+    font-size: 40px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .shops-container {
+    gap: 18px;
+    padding: 25px 15px;
+  }
+  .shop-card {
+    height: 220px;
+  }
+  .hover-icon {
+    font-size: 36px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .shops-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px 10px;
+  }
+  .shop-card {
+    height: 200px;
+    border-radius: 16px;
+  }
+  .hover-icon {
+    font-size: 32px;
+  }
+}
+
+
+.hover-icon i {
+  transition: transform 0.3s ease;
+}
+
+.shop-card:hover .hover-icon i {
+  transform: rotate(-15deg) scale(1.1);
 }
