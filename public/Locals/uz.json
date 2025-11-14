@@ -1,0 +1,107 @@
+{
+  "header": {
+    "home": "Bosh sahifa",
+    "services": "Xizmatlar",
+    "products": "Mahsulotlar",
+    "watches": "Soatlar",
+    "sale": "Chegirmalar",
+    "blog": "Blog",
+    "cart": "Savat",
+    "shops": "Do'konlar",
+    "silgle": "Bitta post",
+    "silgleProduct": "Bitta mahsulot",
+    "contact": "Aloqa",
+    "check": "To'lov sahifasi",
+    "accaunt": "Mening hisobim",
+    "headerSearch": "Qidirish..."
+  },
+  "hero": {
+    "titles": [
+      "Sizning MAHSULOTLARINGIZ A'LO",
+      "Eng yangi mahsulotlarimizni ko'ring",
+      "Chegirmalar va takliflarni qo'ldan bermang"
+    ],
+    "button": "MAHSULOTLARNI SOTIB OLISH"
+  },
+  "deliver": {
+    "title": "Bepul yetkazib berish",
+    "title1": "Sifat kafolati",
+    "title2": "Kunlik takliflar",
+    "title3": "100% xavfsiz to'lov",
+    "text": "Biz sizga eng yuqori sifatli xizmatni taqdim etamiz.",
+    "text1": "Har bir buyurtma g'amxo'rlik bilan yetkaziladi.",
+    "text2": "Har kuni yangi chegirmalar va takliflar mavjud.",
+    "text3": "To'lov tizimlarimiz to'liq xavfsiz va ishonchli.",
+    "text4": "Biz mijozlarimizdan mamnunmiz va doimo yordam beramiz."
+  },
+  "phone": {
+    "title": "Smartfonlar",
+    "title1": "Aqlli Soatlar",
+    "text1": "iPhone 15 Pro Max",
+    "text2": "Samsung Galaxy S24",
+    "text3": "Google Pixel 8 Pro",
+    "text4": "Xiaomi 14 Ultra"
+  },
+  "watch": {
+    "text1": "Apple Watch Series 9",
+    "text2": "Samsung Galaxy Watch 6",
+    "text3": "Garmin Fenix 7",
+    "text4": "Fitbit Versa 4"
+  },
+  "buttons": {
+    "addToCart": "Savatga qo'shish",
+    "view": "Ko'rish",
+    "wishlist": "Sevimlilar"
+  },
+  "cart": {
+    "title": "Savat",
+    "empty": "Savat bo'sh",
+    "emptyText": "Sizning savatingizda hali mahsulot yo'q",
+    "continueShopping": "Xaridni davom ettirish",
+    "orderSummary": "Buyurtma xulosasi",
+    "product": "Mahsulot",
+    "quantity": "Miqdor",
+    "total": "Jami",
+    "action": "Harakat",
+    "remove": "O'chirish",
+    "increase": "Oshirish",
+    "decrease": "Kamaytirish",
+    "subtotal": "Jami summa",
+    "shipping": "Yetkazib berish",
+    "free": "Bepul",
+    "discount": "Chegirma",
+    "grandTotal": "Umumiy summa",
+    "proceedToCheckout": "To'lovga o'tish",
+    "freeShipping": "Bepul yetkazib berish",
+    "returnPolicy": "30 kun qaytarish",
+    "securePayment": "Xavfsiz to'lov",
+    "itemsCount": "{{count}} ta mahsulot"
+  },
+  "sale": {
+    "title": "10% chegirma",
+    "text": "Yangi yil aksiyasi",
+    "button": "Aksiyali Mahsulotlar"
+  },
+  "latest": {
+    "heading": "So‘nggi postlar",
+    "title": "2023-yil 22-fevral - Gadjetlar",
+    "title1": "2023-yil 25-fevral - Texnologiya",
+    "title2": "2023-yil 22-fevral - Kamera",
+    "text": "2023-yilda eng zo‘r gadjetlarni oling",
+    "text1": "Siz bilmagan texnologik hiyla",
+    "text2": "Dunyoning eng yaxshi 10 ta kichik kamerasi"
+  },
+  "slider": {
+    "title1": "Ajoyib Mahsulot",
+    "title2": "Zo'r Tajriba",
+    "title3": "Mukammal Qo'llab-quvvatlash",
+    "text1": "Bu mahsulot mening kutganimdan ham ajoyib bo'ldi. Sifat va ishlash juda yuqori darajada.",
+    "text2": "Xizmat sifatidan juda mamnunman. Tez va samarali yechimlar taqdim etishdi.",
+    "text3": "Mijozlar qo'llab-quvvatlash jamoasi ajoyib ish qilmokda. Har qanday muammoni tez hal qilishdi."
+  },
+  "form": {
+    "title1": "Hozir obuna bo‘ling",
+    "text1": "Eng so‘nggi yangiliklar, yangilanishlar va takliflar to‘g‘ridan-to‘g‘ri pochtangizga yuboriladi.",
+    "button": "Ro'yxatdan o'ting"
+  }
+}

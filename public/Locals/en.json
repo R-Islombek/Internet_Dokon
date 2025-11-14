@@ -1,0 +1,109 @@
+{
+    "header": {
+        "home": "Bosh sahifa",
+        "services": "Xizmatlar",
+        "products": "Mahsulotlar",
+        "watches": "Soatlar",
+        "sale": "Chegirmalar",
+        "blog": "Blog",
+        "cart": "Savat",
+        "shops": "Do‘konlar",
+        "silgle": "Bitta post",
+        "silgleProduct": "Bitta mahsulot",
+        "contact": "Aloqa",
+        "check": "To‘lov sahifasi",
+        "accaunt": "Mening hisobim",
+        "headerSearch": "Qidirish..."
+    },
+    "hero": {
+        "titles": [
+            "Your PRODUCTS ARE GREAT",
+            "Check out our latest products",
+            "Don’t miss discounts and deals"
+        ],
+        "button": "SHOP PRODUCT"
+    },
+    "deliver": {
+        "title": "Free delivery",
+        "title1": "Quality guarantee",
+        "title2": "Daily offers",
+        "title3": "100% secure payment",
+        "text": "Consectetur adipi elit lorem ipsum dolor sit amet.",
+        "text1": "Consectetur adipi elit lorem ipsum dolor sit amet.",
+        "text2": "Dolor sit amet orem ipsu mcons ectetur adipi elit.",
+        "text3": "Amet consectetur adipi elit loreme ipsum dolor sit.",
+        "text4": "Rem Lopsum dolor sit amet, consectetur adipi elit."
+    },
+    "phone": {
+        "title": "Smartphones",
+        "title1": "Smart Watches",
+        "text1": "iPhone 15 Pro Max",
+        "text2": "Samsung Galaxy S24",
+        "text3": "Google Pixel 8 Pro",
+        "text4": "Xiaomi 14 Ultra"
+    },
+    "watch": {
+        "text1": "Apple Watch Series 9",
+        "text2": "Samsung Galaxy Watch 6",
+        "text3": "Garmin Fenix 7",
+        "text4": "Fitbit Versa 4"
+    },
+    "buttons": {
+        "addToCart": "Add to Cart",
+        "view": "View",
+        "wishlist": "Wishlist"
+    },
+    "cart": {
+        "title": "Shopping Cart",
+        "empty": "Your cart is empty",
+        "emptyText": "You haven't added any products to your cart yet",
+        "continueShopping": "Continue Shopping",
+        "orderSummary": "Order Summary",
+        "product": "Product",
+        "quantity": "Quantity",
+        "total": "Total",
+        "action": "Action",
+        "remove": "Remove",
+        "increase": "Increase",
+        "decrease": "Decrease",
+        "subtotal": "Subtotal",
+        "shipping": "Shipping",
+        "free": "Free",
+        "discount": "Discount",
+        "grandTotal": "Grand Total",
+        "proceedToCheckout": "Proceed to Checkout",
+        "freeShipping": "Free Shipping",
+        "returnPolicy": "30-Day Return",
+        "securePayment": "Secure Payment",
+        "itemsCount": "{{count}} items"
+    },
+    "sale": {
+        "title": "10% off",
+        "text": "New year sale",
+        "button": "Shop Sale"
+    },
+    "latest": {
+        "heading": "Latest Posts",
+        "title": "feb 22, 2023 - Gadgets",
+        "title1": "feb 25, 2023 - Technology",
+        "title2": "feb 22, 2023 - Camera",
+        "text": "Get some cool gadgets in 2023",
+        "text1": "Technology Hack You Won't Get",
+        "text2": "Top 10 Small Camera In The World"
+    },
+    "slider": {
+        "title1": "Amazing Product",
+        "title2": "Great Experience",
+        "title3": "Perfect Support",
+        "text1": "This product exceeded my expectations. The quality and performance are top-notch.",
+        "text2": "I’m very satisfied with the service quality. They provide fast and efficient solutions.",
+        "text3": "The customer support team is doing an excellent job. They solved every issue quickly."
+    },
+    "form": {
+        "title1": "Subscribe Us Now",
+        "text1": "Get latest news, updates and deals directly mailed to your inbox.",
+        "button": "Sign Up"
+
+    }
+
+}
