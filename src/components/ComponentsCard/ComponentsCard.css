@@ -1,0 +1,360 @@
+.componentsCard {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.componentsCard__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.componentsCard__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2c3e50;
+  position: relative;
+}
+
+.componentsCard__title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(45deg, #3498db, #9b59b6);
+  border-radius: 2px;
+}
+
+.componentsCard__title--watches {
+  margin-top: 60px;
+  color: #34495e;
+}
+
+/* 4 ta yonma-yon card uchun grid */
+.cards__grid--four {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cards__grid {
+  display: grid;
+  padding: 20px 0;
+}
+
+.product-card {
+  background: white;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card__image-container {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  flex-shrink: 0;
+}
+
+.card__image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .card__image {
+  transform: scale(1.05);
+}
+
+.card__badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(45deg, #e74c3c, #c0392b);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 15px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.watch-badge {
+  background: linear-gradient(45deg, #3498db, #2980b9);
+}
+
+.card__wishlist {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  z-index: 2;
+}
+
+.card__wishlist:hover {
+  transform: scale(1.1);
+}
+
+.card__wishlist.active {
+  background: #e74c3c;
+  color: white;
+}
+
+.card__content {
+  padding: 0 5px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  line-height: 1.3;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.card__rating {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.star {
+  color: #ddd;
+  font-size: 0.9rem;
+}
+
+.star.filled {
+  color: #f39c12;
+}
+
+.rating__text {
+  font-size: 0.8rem;
+  color: #7f8c8d;
+  margin-left: 3px;
+  white-space: nowrap;
+}
+
+.card__prices {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.card__current-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #27ae60;
+  white-space: nowrap;
+}
+
+.card__old-price {
+  font-size: 0.85rem;
+  color: #95a5a6;
+  text-decoration: line-through;
+  white-space: nowrap;
+}
+
+.card__actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+}
+
+.card__cart-btn {
+  flex: 1;
+  background: linear-gradient(45deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  min-height: 36px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card__cart-btn:hover {
+  background: linear-gradient(45deg, #2980b9, #3498db);
+  transform: translateY(-2px);
+}
+
+.card__view-btn {
+  background: transparent;
+  border: 2px solid #3498db;
+  color: #3498db;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.8rem;
+  min-height: 36px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.card__view-btn:hover {
+  background: #3498db;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.watch-card {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(45deg, #3498db, #9b59b6) border-box;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .cards__grid--four {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .card__title {
+    font-size: 0.95rem;
+    min-height: 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .componentsCard__title {
+    font-size: 2rem;
+  }
+  
+  .card__image {
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .componentsCard {
+    padding: 40px 0;
+  }
+  
+  .componentsCard__title {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .cards__grid--four {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .card__actions {
+    flex-direction: row;
+  }
+  
+  .card__image {
+    height: 200px;
+  }
+  
+  .card__title {
+    font-size: 1.1rem;
+    min-height: auto;
+  }
+  
+  .card__cart-btn,
+  .card__view-btn {
+    font-size: 0.85rem;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .componentsCard {
+    padding: 30px 0;
+  }
+  
+  .componentsCard__title {
+    font-size: 1.6rem;
+  }
+  
+  .product-card {
+    padding: 12px;
+  }
+  
+  .card__image {
+    height: 160px;
+  }
+  
+  .card__title {
+    font-size: 1rem;
+  }
+  
+  .card__actions {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .card__cart-btn,
+  .card__view-btn {
+    width: 100%;
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+}
+
+/* Til o'zgarishida matn uzun bo'lsa */
+.long-text {
+  font-size: 0.75rem;
+  line-height: 1.2;
+}
+
+/* Button'larda matn uzun bo'lsa */
+.button-long-text {
+  font-size: 0.7rem;
+  padding: 6px 8px;
+}

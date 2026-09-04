@@ -1,0 +1,128 @@
+/* ==== Deliver Section ==== */
+
+.deliver {
+  background: linear-gradient(135deg, #f3f7fb, #ffffff);
+  padding: 80px 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.deliver__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.deliver__item {
+  width: 320px;
+  border-radius: 20px;
+  padding: 35px 25px;
+  box-shadow: 0 10px 25px rgba(58, 88, 120, 0.08);
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  transition: all 0.35s ease;
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+}
+
+.deliver__item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  background: linear-gradient(145deg, rgba(58, 88, 120, 0.05), rgba(255,255,255,0.6));
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.deliver__item:hover::before {
+  opacity: 1;
+}
+
+.deliver__item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(58, 88, 120, 0.15);
+}
+
+.deliver__icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(58, 88, 120, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.deliver__item:hover .deliver__icon-box {
+  background: rgba(58, 88, 120, 0.15);
+  transform: scale(1.05);
+}
+
+.deliver__icon {
+  font-size: 28px;
+  color: #3a5878;
+  transition: transform 0.3s ease;
+}
+
+.deliver__item:hover .deliver__icon {
+  transform: scale(1.1);
+}
+
+.deliver__content h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  color: #3a5878;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.deliver__content p {
+  margin-top: 8px;
+  color: #555;
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+/* === Responsive === */
+@media (max-width: 900px) {
+  .deliver__list {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .deliver {
+    padding: 60px 0;
+  }
+
+  .deliver__item {
+    padding: 25px 20px;
+    gap: 15px;
+  }
+
+  .deliver__icon-box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .deliver__icon {
+    font-size: 22px;
+  }
+
+  .deliver__content h3 {
+    font-size: 16px;
+  }
+
+  .deliver__content p {
+    font-size: 13px;
+  }
+}

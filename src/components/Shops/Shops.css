@@ -1,0 +1,118 @@
+/* ==================== MAIN ==================== */
+.shops-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 40px 20px;
+  margin-top: 50px;
+}
+
+.shop-card {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4/3; /* width:height proporsiyasi */
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.shop-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+}
+
+.shop-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.shop-card:hover .shop-img {
+  transform: scale(1.2);
+  filter: brightness(60%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0);
+  transition: background 0.4s ease;
+  border-radius: 20px;
+}
+
+.shop-card:hover .overlay {
+  background: rgba(0,0,0,0.35);
+}
+
+.hover-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  font-size: 45px;
+  color: #fff;
+  opacity: 0;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.shop-card:hover .hover-icon {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Hover pulsation effect */
+.hover-icon i {
+  transition: transform 0.3s ease;
+}
+
+.shop-card:hover .hover-icon i {
+  transform: scale(1.2) rotate(-10deg);
+}
+
+/* ==================== RESPONSIVE ==================== */
+
+/* Large Tablets */
+@media (max-width: 1200px) {
+  .shops-container {
+    gap: 20px;
+    padding: 30px 20px;
+  }
+  .hover-icon {
+    font-size: 40px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 992px) {
+  .shops-container {
+    gap: 18px;
+    padding: 25px 15px;
+  }
+  .hover-icon {
+    font-size: 36px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .shops-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px 10px;
+  }
+  .shop-card {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    border-radius: 16px;
+  }
+  .hover-icon {
+    font-size: 32px;
+  }
+}
